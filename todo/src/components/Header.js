@@ -1,10 +1,10 @@
-
-function Header() {
+import Button from './Button'
+function Header({onAdd}) {
     return (
-        <div>
+        <header className="header">
             <h1>Task Tracker</h1>
-            <button>Add</button>
-        </div>
+            <Button onAdd={onAdd}/>
+        </header>
     )
 }
 
